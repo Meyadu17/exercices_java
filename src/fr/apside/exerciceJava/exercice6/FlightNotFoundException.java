@@ -1,4 +1,4 @@
-package fr.apside.exerciceJava;
+package fr.apside.exerciceJava.exercice6;
 
 /**
  * FlightNotFoundException : Si le vol demandé n'existe pas

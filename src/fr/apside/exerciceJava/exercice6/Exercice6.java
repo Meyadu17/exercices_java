@@ -1,7 +1,5 @@
 package fr.apside.exerciceJava.exercice6;
 
-import fr.apside.exerciceJava.FlightNotFoundException;
-
 /**
  * Exercice 6 - Les exceptions
  * Temps passé : 30 minutres

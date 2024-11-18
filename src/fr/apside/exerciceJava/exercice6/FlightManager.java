@@ -1,7 +1,5 @@
 package fr.apside.exerciceJava.exercice6;
 
-import fr.apside.exerciceJava.FlightNotFoundException;
-
 import java.util.HashMap;
 import java.util.Map;
 
