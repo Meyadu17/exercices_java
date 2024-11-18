@@ -2,7 +2,7 @@ package fr.apside.exerciceJava.exercice4;
 
 /**
  * Exercice 4 - Héritage et Interface
- * Temps passé : minutes
+ * Temps passé : -
  * Problèmes rencontré : galère avec l'utilisation de default
  */
 public class exercice4 {
