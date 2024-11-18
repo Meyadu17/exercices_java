@@ -342,17 +342,96 @@ paramétrés avec `@ParameterizedTest` et `@CsvSource`
 ## 3. En plus !
 Vous pouvez maintenant tester également les résultats des exercices 1 (Lasagna), 3 (BirdWatcher) ou 4 (Warrior/Wizard).
 
-## Exercice 8 - Boîte à objets générique
-//TODO
+# Exercice 8 - Boîte à objets générique
+## 1. Créer une classe générique Box
+Créer une classe `Box` générique qui peut contenir n'importe quel type d'objet, ici un type T.
 
-## Exercice 9 - Design Pattern
-//TODO
+## 2. Créer une méthode générique qui manipule les boîtes
+Dans une classe utilitaire, `BoxUtil`, créer une méthode générique qui prend une Box de n'importe quel type et affiche
+son contenu.
 
-## Exercice 10 - Records et classes scellées
-//TODO
+## 3. Tester la classe avec différents types d'objets
+Créer plusieurs boîtes avec différents types d'objets (Integer, String, Double, etc.), et utilise la méthode générique pour
+afficher leur contenu.
 
-## Exercice 11 - Les chiffres romains
-//TODO
+## 4. Améliorations
+Améliorer la classe `Box` en ajoutant les fonctionnalités suivantes :
+- Créer une méthode qui compare le contenu de deux boîtes (en utilisant Comparable).
+- Ajouter la capacité de stocker une collection d'objets (par exemple, List).
+- Ajouter des restrictions de types sur les génériques (par exemple, T extends Number).
 
-## Exercice 12 - Compter les nombres premiers positifs inférieur à n
-//TODO
+# Exercice 9 - Design Pattern
+Travailler sur les patterns de création, de structure et de comportement.
+
+## Système de commande de restauration rapide
+Tu dois concevoir un système pour un restaurant rapide où un client peut passer des commandes, les cuisiniers préparent
+les plats, et le système de caisse gère les paiements. Le système doit utiliser plusieurs design patterns pour être
+modulable et extensible.
+
+## 1. Utilisation du pattern Singleton pour le gestionnaire de caisse
+Crée une classe `Cashier` qui suit le pattern `Singleton`. Ce gestionnaire sera responsable d'encaisser les paiements des
+clients via une méthode `processPayment` par exemple.
+
+## 2. Utilisation du pattern Factory pour créer des commandes
+Le restaurant propose plusieurs types de repas.  
+Utilise le pattern `Factory` pour créer les différents types de commandes avec une description et un coût pour chaque
+type (par exemple PIZZA, BURGER, DRINK). L'`OrderFactory` lèvera une exception pour un type de commande inconnu.
+
+## 3. Utilisation du pattern Decorator pour ajouter des options à la commande
+Le client peut ajouter des options à son repas (par exemple du fromage supplémentaire pour 1.5€ de plus et des frites
+pour 2€ en plus).  
+Utilise le pattern `Decorator` pour étendre les fonctionnalités des commandes et créer un `CheeseDecorator` et un
+`FriesDecorator`.
+
+## 4. Utilisation du pattern Observer pour notifier les cuisiniers d'une nouvelle commande
+Utilise le pattern Observer pour que chaque cuisinier ( PizzaCook , BurgerCook et DrinkCook ) soit informé lorsqu'une
+nouvelle commande est passée.
+
+## 5. Utilisation du pattern Command pour gérer la préparation des commandes
+Utilise le pattern `Command` pour encapsuler les actions de préparation des repas (classe `PrepareOrderCommand`) par les
+cuisiniers dans une cuisine (méthode `takeOrder` de la classe `Kitchen`).
+
+## 6. Mettre tout ensemble
+Crée une classe `Main` pour orchestrer tous les patterns et simuler le passage d'une commande dans le restaurant en
+respectant l'ordre suivant :
+- Créer les commandes via l'OrderFactory (Factory : Crée des commandes de repas)
+- Ajouter des options via les décorateurs (Decorator : Ajoute des options aux commandes)
+- Notifier les cuisiniers (Observer : Notifie les cuisiniers quand une nouvelle commande est passée)
+- Gérer les préparations dans la cuisine via le PrepareOrderCommand (Command : Encapsule les actions des cuisiniers lors de la préparation des repas)
+- Payer les commandes (Singleton : Gère la caisse avec une seule instance)
+- Préparer les commandes de la cuisine
+
+# Exercice 10 - Records et classes scellées
+L'objectif est de pratiquer les records et les sealed classes en modélisant un système de gestion d'un zoo. Chaque animal
+aura des propriétés uniques, et nous utiliserons des sealed classes pour restreindre les types d'animaux possibles.
+- Utiliser des records pour représenter les animaux et leurs caractéristiques immuables.
+- Créer des sealed classes pour définir une hiérarchie fermée entre différents types d'animaux.
+
+## 1. Créer une sealed class pour les animaux
+Les animaux du zoo sont divisés en mammifères, oiseaux, et reptiles. Ils auront un nom et un age. Utilisez une sealed
+class pour restreindre cette hiérarchie.
+
+## 2. Créer les sous classes scellées
+Chaque sous-classe représente un type d'animal spécifique et utilise un record pour être immuable. Créer 3 records pour
+les mamifères, les oiseaux et les reptiles par exemple. Les mamifères auront une propriété supplémentaire pour savoir si
+ils sont en danger ou non. Les oiseaux auront une propriété supplémentaire pour connaitre leur envergure. Les reptiles
+auront une propriété supplémentaire pour savoir si ils sont venimeux ou non.
+
+## 3. Créer une classe Zoo
+La classe stockera une liste d'animaux et qui permettra d'ajouter un animal, de lister les animaux de la liste et de trouver
+un animal présent dans la liste par son nom.
+
+## 4. Tester le tout
+- Ajouter au zoo un lion, un aigle et un cobra.
+- Lister les animaux présents dans le zoo.
+- Rechercher l'aigle dans le zoo.
+
+# Exercice 11 - Les chiffres romains
+Convertir n'importe quel nombre entier compris entre 1 et 3000 inclus en écriture romaine sachant que Les chiffres
+romains modernes sont écrits en exprimant chaque chiffre séparément en commençant par le chiffre le plus à gauche et
+en sautant tout chiffre ayant une valeur de zéro. Dans la pratique, avec l'exemple de 1990. En chiffres romains 1990 s'écrit
+MCMXC : 1000=M 900=CM 90=XC 2008 s'écrit MMVIII : 2000=MM 8=VIII.
+
+# Exercice 12 - Compter les nombres premiers positifs inférieur à n
+## Bonus performance
+Contrainte de temps d'exécution inférieur à 10 secondes pour n=1 000 000.
