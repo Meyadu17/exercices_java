@@ -19,7 +19,7 @@ public class Exercice1 {
 		// 2. Calculer le temps de four restant en minutes
 		lasagna.remainingMinutesInOven(30);
 
-		//3.Calculer le temps de préparation en minutes
+		// 3.Calculer le temps de préparation en minutes
 		lasagna.preparationTimeInMinutes(2);
 
 		// 4. Calculer le temps de travail total en minutes
