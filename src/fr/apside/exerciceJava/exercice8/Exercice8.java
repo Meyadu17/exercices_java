@@ -5,9 +5,11 @@ import java.util.Arrays;
 /**
  * Exercice 7 - Boîte à objets générique
  * Temps passé : 1:30
- * Problèmes rencontrés : passer du temps sur Comparable, à essayer de comprendre son fonctionnement
+ * Problèmes rencontrés :
+ * passer du temps sur Comparable, à essayer de comprendre son fonctionnement
+ * Notions pas bien assimilé, à revoir
  */
-public class exercice8 {
+public class Exercice8 {
 	public static void main(String[] args) {
 		Box<Integer> integerBox1 = new Box<>(123);
 		Box<Integer> integerBox2 = new Box<>(250);

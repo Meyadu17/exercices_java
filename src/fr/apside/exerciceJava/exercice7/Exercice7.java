@@ -5,7 +5,7 @@ package fr.apside.exerciceJava.exercice7;
  * Temps passé : 3h
  * Problèmes rencontrés : tellement habituée à utiliser Mockito avec Spring que j'ai eu un peu de mal au début.
  */
-public class exercice7 {
+public class Exercice7 {
 	public static void main(String[] args) {
 		int a = 5;
 		int b = 23;

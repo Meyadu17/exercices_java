@@ -5,7 +5,7 @@ package fr.apside.exerciceJava.exercice4;
  * Temps passé : -
  * Problèmes rencontré : galère avec l'utilisation de default
  */
-public class exercice4 {
+public class Exercice4 {
 	public static void main(String[] args) {
 		/**
 		 * Dans cet exercice, vous jouez à un jeu de rôle nommé "Wizards and Warriors", qui vous permet d'incarner un sorcier ou un guerrier.
