@@ -2,10 +2,10 @@ package fr.apside.exerciceJava.exercice7;
 
 /**
  * Exercice 7 - Les tests
- * Temps passé : (16:10)
- * Problèmes rencontrés :
+ * Temps passé : 3h
+ * Problèmes rencontrés : tellement habituée à utiliser Mockito avec Spring que j'ai eu un peu de mal au début.
  */
-public class ecercice7 {
+public class exercice7 {
 	public static void main(String[] args) {
 		int a = 5;
 		int b = 23;
