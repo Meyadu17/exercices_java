@@ -3,10 +3,10 @@ package fr.apside.exerciceJava.exercice11;
 import static fr.apside.exerciceJava.exercice11.NombreRomain.convertToRoman;
 
 /**
- *  * Exercice 11 - Les chiffres romains
- *  * Temps passé : 16:00
- *  * Problèmes rencontrés :
- *  */
+ * Exercice 11 - Les chiffres romains
+ * Temps passé :
+ * Problèmes rencontrés :
+ */
 public class Ecercice11 {
 	public static void main(String[] args) {
 		/**
