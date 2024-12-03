@@ -1,7 +1,6 @@
 package fr.apside.exerciceJava.exerciceBonus.exemple;
 
-//import fr.mtech.jams.exception.technical.JamsTechnicalException;
-//import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Service;
 
 import java.util.EnumMap;
 import java.util.List;
@@ -10,9 +9,9 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-//@Service
+@Service
 public class ExempleFactory {
-/*
+
 	//Avec cette liste un recupère tout les implementations de l'interfaces IFamille (ici la classe toto et la classe tata).
 	private final List<IFamille> familles;
 	private Map<FamilleEnum, IFamille> mapage = new EnumMap<>(FamilleEnum.class);
@@ -43,9 +42,10 @@ public class ExempleFactory {
 	//récupération du service correspondant à l'énumération choisie (ex TATA ou TOTO)
 	public IFamille getServiceFamilleEnum(FamilleEnum familleEnum){
 		if (!mapage.containsKey(familleEnum)) {
-			throw new JamsTechnicalException("Pas de service trouvé.");
+			System.out.println("Pas de service trouvé.");
+			//throw new JamsTechnicalException("Pas de service trouvé.");
 		}
 		return mapage.get(familleEnum);
 	}
-*/
+
 }

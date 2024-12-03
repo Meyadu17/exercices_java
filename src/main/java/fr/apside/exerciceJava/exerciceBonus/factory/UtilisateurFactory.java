@@ -1,6 +1,5 @@
 package fr.apside.exerciceJava.exerciceBonus.factory;
-/*
-import fr.mtech.jams.exception.technical.JamsTechnicalException;
+
 import org.springframework.stereotype.Service;
 
 import java.util.EnumMap;
@@ -9,10 +8,10 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-@Service*/
+@Service
 public class UtilisateurFactory {
 	//récupération des implémentations de l'interface :
-	/*private final List<IUtilisateur> listUtilisateurs;
+	private final List<IUtilisateur> listUtilisateurs;
 	private final Map<UtilisateurEnum, IUtilisateur> mapUtilisateurs = new EnumMap<>(UtilisateurEnum.class);
 
 	//maping des éléments
@@ -31,8 +30,9 @@ public class UtilisateurFactory {
 	//récupération des services adéquats
 	public IUtilisateur getServiceUtilisateurEnum(UtilisateurEnum utilisateurEnum) {
 		if (!mapUtilisateurs.containsKey(utilisateurEnum)) {
-			throw new JamsTechnicalException("Service non trouvé.");
+			System.out.println("Service non trouvé.");
+			//throw new JamsTechnicalException("Service non trouvé.");
 		}
 		return mapUtilisateurs.get(utilisateurEnum);
-	}*/
+	}
 }

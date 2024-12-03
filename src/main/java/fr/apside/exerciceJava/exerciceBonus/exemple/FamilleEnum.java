@@ -1,14 +1,14 @@
 package fr.apside.exerciceJava.exerciceBonus.exemple;
 
-//import lombok.AllArgsConstructor;
-//import lombok.Getter;
-//import org.apache.commons.lang3.StringUtils;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.EnumSet;
 
-//@AllArgsConstructor
+@AllArgsConstructor
 public enum FamilleEnum {
-/*
+
 	TOTO("codeToto"),
 	TATA("codeTata");
 
@@ -20,5 +20,5 @@ public enum FamilleEnum {
 				familleEnum -> StringUtils.equals(familleEnum.getCode(), code)).findAny().orElse(TOTO);
 
 	}
- */
+
 }

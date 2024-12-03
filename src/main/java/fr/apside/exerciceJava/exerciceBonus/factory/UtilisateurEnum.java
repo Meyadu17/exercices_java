@@ -1,14 +1,14 @@
 package fr.apside.exerciceJava.exerciceBonus.factory;
 
-//import lombok.AllArgsConstructor;
-//import lombok.Getter;
-//import org.apache.commons.lang3.StringUtils;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.EnumSet;
 
-//@AllArgsConstructor
+@AllArgsConstructor
 public enum UtilisateurEnum {
-	/*NOM("codeNom"),
+	NOM("codeNom"),
 	PRENOM("codePrenom");
 
 	@Getter
@@ -27,5 +27,5 @@ public enum UtilisateurEnum {
 				// Renvoie la première instance qui correspond, ou NOM par défaut si aucune ne correspond
 				// pour s'assurer qu'une instance valide de l'énumération est toujours retournée, même si le code fourni ne correspond à aucune instance
 				.findAny().orElse(NOM);
-	}*/
+	}
 }

@@ -1,13 +1,13 @@
 package fr.apside.exerciceJava.exerciceBonus.exemple;
 
-//import lombok.AllArgsConstructor;
-//import org.springframework.stereotype.Service;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
-//@Service
-//@AllArgsConstructor
-public class Toto /*implements IFamille*/{
+@Service
+@AllArgsConstructor
+public class Toto implements IFamille{
 
-	/*@Override
+	@Override
 	public String qui() {
 		return "toto";
 	}
@@ -15,5 +15,5 @@ public class Toto /*implements IFamille*/{
 	@Override
 	public FamilleEnum getFamilleEnum() {
 		return FamilleEnum.TOTO;
-	}*/
+	}
 }

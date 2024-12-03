@@ -1,12 +1,12 @@
 package fr.apside.exerciceJava.exerciceBonus.exemple;
 
-//import lombok.RequiredArgsConstructor;
-//import org.springframework.stereotype.Service;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
-//@Service
-//@RequiredArgsConstructor
+@Service
+@RequiredArgsConstructor
 public class ExempleService {
-/*
+
 	private final ExempleFactory exempleFactory;
 
 	public String getToto() {
@@ -16,5 +16,5 @@ public class ExempleService {
 	public String getTata() {
 		return exempleFactory.getServiceFamilleEnum(FamilleEnum.TATA).qui();
 	}
- */
+
 }
